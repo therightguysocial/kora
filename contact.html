@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Contact Kora | Todo & Productivity App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        content="Get in touch with the Kora team. Have a question, feedback, or need help using Kora? We'd love to hear from you."
+        name="description" />
+
+    <meta content="Kora" name="author" />
+
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Swiper slider css -->
+
+    <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Animation on Scroll css -->
+
+    <link href="assets/libs/aos/aos.css" rel="stylesheet" type="text/css">
+
+    <!-- Style css -->
+
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Head.js -->
+
+    <script src="assets/js/head.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+
+    <header id="navbar"
+        class="light fixed top-0 inset-x-0 flex items-center z-40 w-full lg:bg-transparent bg-white transition-all py-5">
+
+        <div class="container">
+
+            <nav class="flex items-center">
+
+                <!-- Navbar Brand Logo -->
+
+                <a href="index.html">
+
+                    <img src="assets/images/favicon.ico" class="h-8 logo-dark" alt="Kora Logo">
+
+                    <img src="assets/images/favicon.ico" class="h-8 logo-light" alt="Kora Logo">
+
+                </a>
+
+                <!-- Navigation Menu -->
+
+                <div class="hidden lg:block ms-auto">
+
+                    <ul class="navbar-nav flex gap-x-3 items-center justify-center">
+
+                        <!-- Home -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="index.html">
+                                Home
+                            </a>
+
+                        </li>
+
+                        <!-- Features -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="index.html#features">
+                                Features
+                            </a>
+
+                        </li>
+
+                        <!-- Testimonials -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="index.html#testimonials">
+                                Testimonials
+                            </a>
+
+                        </li>
+
+                        <!-- Contact -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="contact.html">
+                                Contact
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Get Started Button -->
+
+                <div class="hidden lg:flex items-center ms-3">
+
+                    <a href="index.html#download"
+                        class="bg-primary text-white px-4 py-2 rounded inline-flex items-center text-sm">
+                        Get Started
+                    </a>
+
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+
+                <div class="lg:hidden flex items-center ms-auto px-2.5">
+
+                    <button type="button" class="py-3 px-4 inline-flex items-center" aria-haspopup="dialog"
+                        aria-expanded="false" aria-controls="mobileMenu" data-hs-overlay="#mobileMenu">
+
+                        <i class="iconify fa6-solid--bars text-2xl text-default-500"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Navbar End -->
+
+
+    <!-- Mobile Menu Start -->
+
+    <div id="mobileMenu"
+        class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-80 bg-white border-e border-e-default-200"
+        role="dialog" tabindex="-1" aria-labelledby="mobileMenu-label">
+
+        <div>
+
+            <div class="flex flex-col h-full divide-y-2 divide-default-200">
+
+                <!-- Mobile Menu Header -->
+
+                <div class="p-6 flex items-center justify-between">
+
+                    <a href="index.html">
+
+                        <img src="assets/images/logo-dark.png" class="h-8" alt="Kora Logo">
+
+                    </a>
+
+                    <button type="button"
+                        class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"
+                        aria-label="Close" data-hs-overlay="#mobileMenu">
+
+                        <span class="sr-only">Close</span>
+
+                        <i class="iconify fa6-solid--xmark text-xl"></i>
+
+                    </button>
+
+                </div>
+
+                <!-- Mobile Menu Links -->
+
+                <div class="p-6 overflow-scroll h-full">
+
+                    <ul class="navbar-nav flex flex-col gap-2">
+
+                        <li class="nav-item">
+
+                            <a href="index.html" class="nav-link">
+                                Home
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="index.html#features" class="nav-link">
+                                Features
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="index.html#testimonials" class="nav-link">
+                                Testimonials
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="contact.html" class="nav-link">
+                                Contact
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Mobile Menu Button -->
+
+                <div class="p-6 flex items-center justify-center">
+
+                    <a href="index.html#download"
+                        class="bg-primary w-full text-white p-3 rounded flex items-center justify-center text-sm">
+                        Get Started
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Mobile Menu End -->
+
+
+    <!-- Hero Section Start -->
+
+    <section class="bg-default-100 lg:pt-28 sm:pb-36 pb-16 pt-36 relative">
+
+        <div class="container">
+
+            <div class="flex justify-center">
+
+                <div class="lg:w-7/12 text-center">
+
+                    <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">
+                        Contact Kora
+                    </span>
+
+                    <h1 class="text-5xl/relaxed text-default-700 mt-5">
+                        We're here to help
+                    </h1>
+
+                    <p class="mb-6 md:text-lg text-default-500">
+                        Have a question, feedback, or need help with Kora?
+                        Send us a message and we'll get back to you.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Shape -->
+
+        <div class="absolute -bottom-1 w-full">
+
+            <svg class="w-full h-full" viewBox="0 0 1440 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+                <g id="shape-b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                    <g id="curve" fill="#fff">
+
+                        <path
+                            d="M0,30.013 C239.659,10.004 479.143,0 718.453,0 C957.763,0 1198.28,10.004 1440,30.013 L1440,40 L0,40 L0,30.013 Z"
+                            id="Path">
+                        </path>
+
+                    </g>
+
+                </g>
+
+            </svg>
+
+        </div>
+
+    </section>
+
+    <!-- Hero Section End -->
+
+
+    <!-- Contact Section Start -->
+
+    <section class="lg:pb-24 py-6 relative">
+
+        <div class="container">
+
+            <div class="lg:flex align-items-center">
+
+                <!-- Contact Form -->
+
+                <div class="lg:w-1/2">
+
+                    <div class="mb-6 relative bg-clip-border rounded-[0.1875rem]">
+
+                        <div class="py-12">
+
+                            <h2 class="mb-4 text-2xl/6 mt-0 font-medium">
+
+                                Send us a message
+
+                            </h2>
+
+                            <p class="mb-12 text-base/6">
+
+                                Whether you have a question, suggestion,
+                                or need help with your tasks, we'd love
+                                to hear from you.
+
+                            </p>
+
+                            <form>
+
+                                <!-- Name -->
+
+                                <div class="w-full">
+
+                                    <div class="mb-5">
+
+                                        <label for="name" class="block text-sm font-medium mb-1 text-default-600">
+                                            Name
+                                            <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input type="text"
+                                            class="py-2 px-4 leading-6 block w-full border-default-300 rounded text-sm focus:border-default-300 focus:ring-0"
+                                            id="name" name="name" placeholder="Your Name" required>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Email -->
+
+                                <div class="w-full">
+
+                                    <div class="mb-5">
+
+                                        <label for="email" class="block text-sm font-medium mb-1 text-default-600">
+                                            Email
+                                            <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input type="email"
+                                            class="py-2 px-4 leading-6 block w-full border-default-300 rounded text-sm focus:border-default-300 focus:ring-0"
+                                            id="email" name="email" placeholder="you@example.com" required>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Subject -->
+
+                                <div class="w-full">
+
+                                    <div class="mb-5">
+
+                                        <label for="subject" class="block text-sm font-medium mb-1 text-default-600">
+                                            Subject
+                                            <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input type="text"
+                                            class="py-2 px-4 leading-6 block w-full border-default-300 rounded text-sm focus:border-default-300 focus:ring-0"
+                                            id="subject" name="subject" placeholder="How can we help?" required>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Message -->
+
+                                <div class="w-full">
+
+                                    <div class="mb-5">
+
+                                        <label for="message" class="block text-sm font-medium mb-1 text-default-600">
+                                            Message
+                                            <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <textarea
+                                            class="py-2 px-4 leading-6 block w-full border-default-300 rounded text-sm focus:border-default-300 focus:ring-0"
+                                            id="message" name="message" rows="5"
+                                            placeholder="Tell us how we can help..." required></textarea>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Submit Button -->
+
+                                <button type="submit"
+                                    class="inline-flex items-center text-sm bg-primary text-white font-medium leading-6 text-center align-middle select-none py-2 px-4 rounded-md transition-all hover:shadow-lg hover:shadow-primary/80">
+
+                                    Send Message
+
+                                    <i class="iconify tabler--send-2 size-4 ms-1">
+                                    </i>
+
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Information -->
+
+                <div class="lg:w-5/12 ms-auto">
+
+                    <div class="lg:ps-10">
+
+                        <div class="mb-8">
+
+                            <span
+                                class="flex items-center justify-center size-14 bg-primary/20 rounded-lg relative shrink-0">
+
+                                <i class="iconify solar--letter-opened-bold-duotone size-8 text-primary">
+                                </i>
+
+                            </span>
+
+                            <h3 class="text-xl font-medium mt-5 mb-2">
+
+                                Email Support
+
+                            </h3>
+
+                            <p class="text-default-500 mb-2">
+
+                                Have a question about Kora?
+
+                            </p>
+
+                            <a href="mailto:support@kora.app" class="text-primary hover:text-primary/80">
+                                support@kora.app
+                            </a>
+
+                        </div>
+
+
+                        <div class="mb-8">
+
+                            <span
+                                class="flex items-center justify-center size-14 bg-orange-500/20 rounded-lg relative shrink-0">
+
+                                <i class="iconify solar--question-circle-bold-duotone size-8 text-orange-500">
+                                </i>
+
+                            </span>
+
+                            <h3 class="text-xl font-medium mt-5 mb-2">
+
+                                Need Help?
+
+                            </h3>
+
+                            <p class="text-default-500">
+
+                                Need assistance with your account,
+                                tasks, or another Kora feature?
+                                Send us a message and we'll help you out.
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="mb-8">
+
+                            <span
+                                class="flex items-center justify-center size-14 bg-teal-500/20 rounded-lg relative shrink-0">
+
+                                <i class="iconify solar--chat-round-bold-duotone size-8 text-teal-500">
+                                </i>
+
+                            </span>
+
+                            <h3 class="text-xl font-medium mt-5 mb-2">
+
+                                Feedback
+
+                            </h3>
+
+                            <p class="text-default-500">
+
+                                Have an idea that could make Kora better?
+                                We would love to hear your suggestions.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Details -->
+
+            <div class="grid md:grid-cols-3 gap-6 mt-10">
+
+                <!-- Email -->
+
+                <div class="flex gap-4 mb-3">
+
+                    <span class="flex items-center justify-center size-12 bg-primary/20 rounded-lg relative shrink-0">
+
+                        <i class="iconify solar--letter-opened-bold-duotone size-7 text-primary">
+                        </i>
+
+                    </span>
+
+                    <div class="grow">
+
+                        <h5 class="text-base text-default-700">
+
+                            Email
+
+                        </h5>
+
+                        <a href="mailto:support@kora.app" class="text-default-500 my-1">
+                            support@kora.app
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Support -->
+
+                <div class="flex gap-4 mb-3">
+
+                    <span
+                        class="flex items-center justify-center size-12 bg-orange-500/20 rounded-lg relative shrink-0">
+
+                        <i class="iconify solar--question-circle-bold-duotone size-7 text-orange-500">
+                        </i>
+
+                    </span>
+
+                    <div class="grow">
+
+                        <h5 class="text-base text-default-700">
+
+                            Support
+
+                        </h5>
+
+                        <p class="text-default-500 my-1">
+
+                            We're here to help
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Location -->
+
+                <div class="flex gap-4 mb-3">
+
+                    <span class="flex items-center justify-center size-12 bg-teal-500/20 rounded-lg relative shrink-0">
+
+                        <i class="iconify solar--global-bold-duotone size-7 text-teal-500">
+                        </i>
+
+                    </span>
+
+                    <div class="grow">
+
+                        <h5 class="text-base text-default-700">
+
+                            Available Everywhere
+
+                        </h5>
+
+                        <p class="text-default-500 my-1">
+
+                            Built for a global community
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section End -->
+
+
+    <!-- CTA Section Start -->
+
+    <section class="bg-primary/5 py-16">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">
+                    Stay Productive
+                </span>
+
+                <h2 class="md:text-3xl text-xl font-semibold my-5">
+                    Ready to get things done?
+                </h2>
+
+                <p class="text-default-500">
+
+                    Start organizing your tasks and make every day
+                    a little more productive with Kora.
+
+                </p>
+
+                <div class="mt-8">
+
+                    <a href="index.html#download"
+                        class="py-3 px-6 rounded text-white bg-primary hover:shadow-lg hover:shadow-primary/50">
+                        Get Started with Kora
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA Section End -->
+
+
+    <!-- Footer Section Start -->
+
+    <footer class="bg-default-100 pt-14 pb-5">
+
+        <div class="container">
+
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-5">
+
+                <!-- Brand -->
+
+                <div class="md:col-span-2">
+
+                    <div>
+
+                        <a href="index.html">
+
+                            <img src="assets/images/favicon.ico" class="h-7" alt="Kora Logo">
+
+                        </a>
+
+                        <p class="text-default-500/80 mt-5 lg:w-1/2">
+
+                            Kora helps you organize your tasks,
+                            prioritize what matters, and get things done
+                            without unnecessary complexity.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Footer Links -->
+
+                <div class="grid grid-cols-2 gap-5">
+
+                    <!-- Resources -->
+
+                    <div>
+
+                        <div class="flex flex-col gap-3">
+
+                            <h5 class="mb-3">
+
+                                Resources
+
+                            </h5>
+
+                            <div class="text-sm text-default-500/80">
+
+                                <a href="#">
+
+                                    Help Center
+
+                                </a>
+
+                            </div>
+
+                            <div class="text-sm text-default-500/80">
+
+                                <a href="#">
+
+                                    FAQ
+
+                                </a>
+
+                            </div>
+
+                            <div class="text-sm text-default-500/80">
+
+                                <a href="#">
+
+                                    Privacy Policy
+
+                                </a>
+
+                            </div>
+
+                            <div class="text-sm text-default-500/80">
+
+                                <a href="#">
+
+                                    Terms of Service
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Company -->
+
+                    <div>
+
+                        <div class="flex flex-col gap-3">
+
+                            <h5 class="mb-3">
+
+                                Kora
+
+                            </h5>
+
+                            <div class="text-sm text-default-500/80">
+
+                                <a href="index.html">
+
+                                    Home
+
+                                </a>
+
+                            </div>
+
+                            <div class="text-sm text-default-500/80">
+
+                                <a href="index.html#features">
+
+                                    Features
+
+                                </a>
+
+                            </div>
+
+                            <div class="text-sm text-default-500/80">
+
+                                <a href="contact.html">
+
+                                    Contact
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="border-b border-default-200 my-5"></div>
+
+
+            <div class="grid sm:grid-cols-2 text-center sm:text-start gap-6">
+
+                <!-- Copyright -->
+
+                <div>
+
+                    <p class="text-default-500/80 text-sm">
+
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+
+                        © Kora. All rights reserved.
+
+                    </p>
+
+                </div>
+
+
+                <!-- Social Links -->
+
+                <div class="flex justify-center sm:justify-end gap-7">
+
+                    <span>
+
+                        <a href="#">
+
+                            <i class="iconify tabler--brand-facebook size-5 hover:text-primary transition-all">
+                            </i>
+
+                        </a>
+
+                    </span>
+
+                    <span>
+
+                        <a href="#">
+
+                            <i class="iconify tabler--brand-x size-5 hover:text-primary transition-all">
+                            </i>
+
+                        </a>
+
+                    </span>
+
+                    <span>
+
+                        <a href="#">
+
+                            <i class="iconify tabler--brand-instagram size-5 hover:text-primary transition-all">
+                            </i>
+
+                        </a>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Footer Section End -->
+
+
+    <!-- Back To Top Start -->
+
+    <button data-toggle="back-to-top"
+        class="fixed text-sm rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-primary/20 text-primary flex justify-center items-center">
+
+        <i class="iconify fa6-solid--arrow-up text-base"></i>
+
+    </button>
+
+    <!-- Back To Top End -->
+
+
+    <!-- Preline Js -->
+
+    <script src="assets/libs/preline/index.js"></script>
+
+    <!-- Swiper Plugin Js -->
+
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Animation on Scroll Plugin Js -->
+
+    <script src="assets/libs/aos/aos.js"></script>
+
+    <!-- Theme Js -->
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

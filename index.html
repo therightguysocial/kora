@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Kora - Simple Todo & Productivity App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        content="Kora is a simple and powerful todo and productivity app that helps you organize tasks, stay focused, and get things done."
+        name="description" />
+    <meta content="Kora" name="author" />
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Swiper slider css -->
+    <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+    <!-- Animation on Scroll css -->
+    <link href="assets/libs/aos/aos.css" rel="stylesheet" type="text/css">
+    <!-- Style css -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <!-- Head.js -->
+    <script src="assets/js/head.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <header id="navbar"
+        class="light fixed top-0 inset-x-0 flex items-center z-40 w-full lg:bg-transparent bg-white transition-all py-5">
+        <div class="container">
+            <nav class="flex items-center">
+                <!-- Navbar Brand Logo -->
+                <a href="index.html">
+                    <img src="assets/images/favicon.ico" class="h-8 logo-dark" alt="Kora Logo">
+                    <img src="assets/images/favicon.ico" class="h-8 logo-light" alt="Kora Logo">
+                </a>
+                <!-- Navigation Menu -->
+                <div class="hidden lg:block ms-auto">
+                    <ul class="navbar-nav flex gap-x-3 items-center justify-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Get Started Button -->
+                <div class="hidden lg:flex items-center ms-3">
+                    <a href="#download"
+                        class="bg-primary text-white px-4 py-2 rounded inline-flex items-center text-sm">
+                        Get Started
+                    </a>
+                </div>
+                <!-- Mobile Menu Toggle Button -->
+                <div class="lg:hidden flex items-center ms-auto px-2.5">
+                    <button type="button" class="py-3 px-4 inline-flex items-center" aria-haspopup="dialog"
+                        aria-expanded="false" aria-controls="mobileMenu" data-hs-overlay="#mobileMenu">
+                        <i class="iconify fa6-solid--bars text-2xl text-default-500"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Navbar End -->
+
+
+    <!-- Mobile Menu Start -->
+
+    <div id="mobileMenu"
+        class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-80 bg-white border-e border-e-default-200"
+        role="dialog" tabindex="-1" aria-labelledby="mobileMenu-label">
+
+        <div>
+
+            <div class="flex flex-col h-full divide-y-2 divide-default-200">
+
+                <!-- Mobile Menu Topbar -->
+
+                <div class="p-6 flex items-center justify-between">
+
+                    <a href="index.html">
+
+                        <img src="assets/images/logo-dark.png" class="h-8" alt="Kora Logo">
+
+                    </a>
+
+                    <button type="button"
+                        class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"
+                        aria-label="Close" data-hs-overlay="#mobileMenu">
+
+                        <span class="sr-only">Close</span>
+
+                        <i class="iconify fa6-solid--xmark text-xl"></i>
+
+                    </button>
+
+                </div>
+
+                <!-- Mobile Menu Links -->
+
+                <div class="p-6 overflow-scroll h-full">
+
+                    <ul class="navbar-nav flex flex-col gap-2 hs-accordion-group">
+
+                        <li class="nav-item">
+
+                            <a href="index.html" class="nav-link">Home</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="#features" class="nav-link">Features</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="#testimonials" class="nav-link">Testimonials</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="contact.html">Contact</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Mobile Menu Button -->
+
+                <div class="p-6 flex items-center justify-center">
+
+                    <a href="#download"
+                        class="bg-primary w-full text-white p-3 rounded flex items-center justify-center text-sm">
+
+                        Get Started
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Mobile Menu End -->
+
+
+    <!-- Hero Section Start -->
+
+    <section class="pt-36 pb-24 bg-primary/5">
+
+        <div class="container">
+
+            <div class="grid lg:grid-cols-6 grid-cols-1 justify-between items-center gap-6">
+
+                <div class="lg:col-span-3">
+
+                    <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">
+
+                        Meet Kora
+
+                    </span>
+
+                    <h2 class="md:text-5xl/tight text-3xl font-semibold mb-7 mt-5">
+
+                        Organize your day.
+
+                        <span
+                            class="relative after:bg-amber-400/60 after:h-6 after:w-full after:inset-x-0 after:bottom-0 after:absolute after:-z-10">
+
+                            Get things done.
+
+                        </span>
+
+                    </h2>
+
+                    <p class="text-default-400 leading-7">
+
+                        Kora is a simple and powerful todo app designed to help you capture tasks,
+                        organize your priorities, and stay focused on what matters most.
+
+                    </p>
+
+                    <div class="flex flex-wrap items-center mt-16 gap-6">
+
+                        <a href="#download"
+                            class="py-3 px-6 rounded text-white bg-primary hover:shadow-lg hover:shadow-primary/50 focus:outline focus:outline-primary/50">
+
+                            Start Using Kora
+
+                        </a>
+
+                        <a href="#features" class="flex items-center gap-2">
+
+                            <span
+                                class="flex items-center justify-center rounded-full w-10 h-10 bg-primary/10 text-primary hover:border hover:border-primary/20 hover:bg-primary/20">
+
+                                <i class="iconify fa6-solid--arrow-down"></i>
+
+                            </span>
+
+                            <p class="font-medium text-primary hover:text-primary/90">
+
+                                Explore Features
+
+                            </p>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="lg:col-start-5 lg:col-span-2">
+
+                    <div class="relative">
+
+                        <img src="assets/images/hero/app1.png" alt="Kora Todo App">
+
+                        <div class="hidden lg:block">
+
+                            <!-- Swiper -->
+
+                            <div class="absolute max-w-xs bottom-28 -start-72">
+
+                                <div id="swiper_one" class="swiper">
+
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+
+                                            <div class="relative">
+
+                                                <div class="p-4 rounded-md bg-white relative">
+
+                                                    <div class="flex items-center gap-5">
+
+                                                        <img src="assets/images/avatars/img-1.jpg"
+                                                            class="w-12 rounded-full" alt="Kora User">
+
+                                                        <div>
+
+                                                            <h2 class="text-sm text-default-400">
+
+                                                                "Kora keeps my entire day organized."
+
+                                                            </h2>
+
+                                                            <p class="mt-2">
+
+                                                                <span
+                                                                    class="flex gap-1 items-center text-yellow-500 text-base">
+
+                                                                    <i class="iconify fa6-solid--star"></i>
+
+                                                                    <i class="iconify fa6-solid--star"></i>
+
+                                                                    <i class="iconify fa6-solid--star"></i>
+
+                                                                    <i class="iconify fa6-solid--star"></i>
+
+                                                                    <i class="iconify fa6-solid--star"></i>
+
+                                                                </span>
+
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="absolute end-1 bottom-0">
+
+                                                        <i
+                                                            class="iconify fa6-solid--quote-right text-2xl text-orange-500/20">
+                                                        </i>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="swiper-slide">
+
+                                            <div>
+
+                                                <div class="p-4 rounded-md bg-white">
+
+                                                    <div class="flex items-center gap-5">
+
+                                                        <div>
+
+                                                            <img src="assets/images/avatars/img-2.jpg"
+                                                                class="w-14 rounded-full" alt="Kora User">
+
+                                                        </div>
+
+                                                        <div>
+
+                                                            <h2 class="text-sm text-default-400">
+
+                                                                "Finally, a todo app that stays simple."
+
+                                                            </h2>
+
+                                                            <p class="mt-2">
+
+                                                                <span
+                                                                    class="flex gap-1 items-center text-yellow-500 text-base">
+
+                                                                    <i class="iconify fa6-solid--star"></i>
+
+                                                                    <i class="iconify fa6-solid--star"></i>
+
+                                                                    <i class="iconify fa6-solid--star"></i>
+
+                                                                    <i class="iconify fa6-solid--star"></i>
+
+                                                                    <i class="iconify fa6-solid--star"></i>
+
+                                                                </span>
+
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="hidden sm:block">
+
+                                <div
+                                    class="before:w-24 before:h-24 before:absolute before:-top-3 before:end-2 before:-z-10 before:bg-[url('../images/pattern/dot3.svg')]">
+                                </div>
+
+                                <div
+                                    class="after:w-24 after:h-24 after:absolute after:bottom-10 after:-z-10 after:bg-[url('../images/pattern/dot3.svg')]">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Hero Section End -->
+
+
+    <!-- Features Section Start -->
+
+    <section id="features" class="py-20">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">
+
+                    Features
+
+                </span>
+
+                <h2 class="md:text-3xl text-xl font-semibold my-5">
+
+                    Everything you need to stay organized
+
+                </h2>
+
+                <p class="text-default-500">
+
+                    Kora gives you the tools you need to plan your day,
+                    manage your tasks, and stay productive.
+
+                </p>
+
+            </div>
+
+            <div class="grid lg:grid-cols-3 grid-cols-1 items-center gap-6 mt-5">
+
+                <div class="relative">
+
+                    <div class="hidden md:block">
+
+                        <div
+                            class="absolute lg:w-9/12 h-3/5 w-72 -z-10 rotate-[20deg] rounded-3xl bg-orange-400/10 end-44 bottom-12 lg:end-10">
+                        </div>
+
+                        <div
+                            class="after:absolute after:-z-10 after:w-full after:h-full after:bg-[url('../images/pattern/dot4.svg')]">
+                        </div>
+
+                    </div>
+
+                    <img src="assets/images/features/app2.png" class="lg:w-full w-1/2 mx-auto" data-aos="zoom-in-right"
+                        alt="Kora Features">
+
+                </div>
+
+                <div class="lg:col-span-2">
+
+                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-7 lg:ps-32">
+
+                        <div>
+
+                            <span class="flex items-center justify-center rounded-md size-12 bg-blue-100">
+
+                                <i class="iconify solar--letter-opened-bold-duotone size-6 text-primary">
+                                </i>
+
+                            </span>
+
+                            <h4 class="text-base mt-6 mb-3">
+
+                                Quick Task Creation
+
+                            </h4>
+
+                            <p class="text-default-500">
+
+                                Add a new task in seconds and capture your ideas
+                                before they slip away.
+
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <span class="flex items-center justify-center rounded-md size-12 bg-green-100">
+
+                                <i class="iconify solar--shield-check-bold-duotone size-6 text-green-500">
+                                </i>
+
+                            </span>
+
+                            <h4 class="text-base mt-6 mb-3">
+
+                                Stay Organized
+
+                            </h4>
+
+                            <p class="text-default-500">
+
+                                Keep your personal, work, and daily tasks organized
+                                in one simple place.
+
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <span class="flex items-center justify-center rounded-md size-12 bg-orange-50">
+
+                                <span class="iconify solar--bolt-bold-duotone size-6 text-orange-500">
+                                </span>
+
+                            </span>
+
+                            <h4 class="text-base mt-6 mb-3">
+
+                                Prioritize What Matters
+
+                            </h4>
+
+                            <p class="text-default-500">
+
+                                Mark important tasks and focus your attention
+                                on the things that matter most.
+
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <span class="flex items-center justify-center rounded-md size-12 bg-teal-100">
+
+                                <i class="iconify solar--notification-unread-bold-duotone size-6 text-teal-500">
+                                </i>
+
+                            </span>
+
+                            <h4 class="text-base mt-6 mb-3">
+
+                                Never Miss a Task
+
+                            </h4>
+
+                            <p class="text-default-500">
+
+                                Keep track of upcoming tasks and stay on top
+                                of everything you need to accomplish.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Features Section End -->
+
+
+    <!-- Features Section-2 Start -->
+
+    <section class="py-20">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">
+
+                    More Features
+
+                </span>
+
+                <h2 class="md:text-3xl text-xl font-semibold my-5">
+
+                    A simpler way to manage your day
+
+                </h2>
+
+                <p class="text-default-500">
+
+                    From creating tasks to completing your goals,
+                    Kora keeps everything simple and focused.
+
+                </p>
+
+            </div>
+
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-6 mt-16">
+
+                <div class="text-center relative" data-aos="fade-up" data-aos-duration="300">
+
+                    <h3 class="text-xl">
+
+                        Create Tasks Instantly
+
+                    </h3>
+
+                    <p class="mt-3">
+
+                        Quickly add tasks and capture everything you need
+                        to remember throughout your day.
+
+                    </p>
+
+                    <div class="pt-5">
+
+                        <img src="assets/images/features/app4.png" alt="Create tasks in Kora">
+
+                    </div>
+
+                    <div class="absolute h-3 w-3 rounded-full bg-pink-600 bottom-8"></div>
+
+                    <div class="absolute h-3 w-3 rounded-full bg-yellow-300 top-32 end-12"></div>
+
+                </div>
+
+                <div class="text-center relative" data-aos="fade-up" data-aos-duration="300">
+
+                    <h3 class="text-xl">
+
+                        Organize Your Priorities
+
+                    </h3>
+
+                    <p class="mt-3">
+
+                        Decide what needs your attention first and
+                        turn a busy day into a clear plan.
+
+                    </p>
+
+                    <div class="pt-5">
+
+                        <img src="assets/images/features/app3.png" alt="Organize tasks in Kora">
+
+                    </div>
+
+                    <div class="absolute h-3 w-3 rounded-full bg-red-400 bottom-8"></div>
+
+                    <div class="absolute h-3 w-3 rounded-full bg-green-400 top-24 end-16"></div>
+
+                </div>
+
+                <div class="text-center relative" data-aos="fade-up" data-aos-duration="300">
+
+                    <h3 class="text-xl">
+
+                        Complete Your Goals
+
+                    </h3>
+
+                    <p class="mt-3">
+
+                        Check off completed tasks, track your progress,
+                        and enjoy the satisfaction of getting things done.
+
+                    </p>
+
+                    <div class="pt-5">
+
+                        <img src="assets/images/features/app4.png" alt="Complete tasks in Kora">
+
+                    </div>
+
+                    <div class="absolute h-3 w-3 rounded-full bg-purple-600 bottom-8 end-0"></div>
+
+                    <div class="absolute h-3 w-3 rounded-full bg-orange-400 top-60"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Features Section-2 End -->
+
+
+    <!-- Testimonials Section Start -->
+
+    <section id="testimonials" class="bg-default-100 relative py-20 overflow-x-hidden" data-aos="fade-up"
+        data-aos-duration="500">
+
+        <div class="absolute top-0 inset-x-0 hidden sm:block">
+
+            <img src="assets/images/shapes/white-wave.svg" alt="svg" class="w-full -scale-x-100">
+
+        </div>
+
+        <div class="container relative">
+
+            <div class="relative z-20">
+
+                <div class="flex items-center justify-between pb-14">
+
+                    <div>
+
+                        <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">
+
+                            Testimonials
+
+                        </span>
+
+                        <h2 class="md:text-3xl text-xl font-semibold my-5">
+
+                            What Kora users say
+
+                        </h2>
+
+                    </div>
+
+                    <div class="flex items-center gap-5">
+
+                        <div class="button-prev">
+
+                            <i class="iconify fa6-solid--arrow-left"></i>
+
+                        </div>
+
+                        <div class="button-next">
+
+                            <i class="iconify fa6-solid--arrow-right"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="relative">
+
+                    <div class="hidden sm:block">
+
+                        <div
+                            class="before:w-24 before:h-24 before:absolute before:-top-10 before:-end-10 before:bg-[url('../images/pattern/dot3.svg')]">
+                        </div>
+
+                        <div
+                            class="after:w-24 after:h-24 after:absolute after:-bottom-10 after:-start-10 after:bg-[url('../images/pattern/dot3.svg')]">
+                        </div>
+
+                    </div>
+
+                    <!-- Swiper -->
+
+                    <div id="swiper_two" class="swiper">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+
+                                <div class="p-10 bg-white">
+
+                                    <p class="text-default-800">
+
+                                        "Kora helped me stop keeping my tasks
+                                        in my head. I can quickly write them down,
+                                        organize them, and focus on getting them done."
+
+                                    </p>
+
+                                    <div class="flex items-center justify-between mt-5">
+
+                                        <div class="flex items-center gap-3">
+
+                                            <div>
+
+                                                <img src="assets/images/avatars/img-1.jpg" class="w-10 rounded-full"
+                                                    alt="User">
+
+                                            </div>
+
+                                            <div>
+
+                                                <h6>
+
+                                                    Alex Morgan
+
+                                                </h6>
+
+                                                <p class="text-sm text-default-500">
+
+                                                    Kora User
+
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div>
+
+                                            <span class="flex gap-1 items-center text-yellow-500 text-base">
+
+                                                <i class="iconify fa6-solid--star"></i>
+
+                                                <i class="iconify fa6-solid--star"></i>
+
+                                                <i class="iconify fa6-solid--star"></i>
+
+                                                <i class="iconify fa6-solid--star"></i>
+
+                                                <i class="iconify fa6-solid--star"></i>
+
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <div class="p-10 bg-white">
+
+                                    <p class="text-default-800">
+
+                                        "I wanted something simple for managing
+                                        my daily tasks. Kora gives me exactly that
+                                        without making productivity complicated."
+
+                                    </p>
+
+                                    <div class="flex items-center justify-between mt-5">
+
+                                        <div class="flex items-center gap-3">
+
+                                            <div>
+
+                                                <img src="assets/images/avatars/img-2.jpg" class="w-10 rounded-full"
+                                                    alt="User">
+
+                                            </div>
+
+                                            <div>
+
+                                                <h6>
+
+                                                    Sarah Williams
+
+                                                </h6>
+
+                                                <p class="text-sm text-default-500">
+
+                                                    Kora User
+
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div>
+
+                                            <span class="flex gap-1 items-center text-yellow-500 text-base">
+
+                                                <i class="iconify fa6-solid--star"></i>
+
+                                                <i class="iconify fa6-solid--star"></i>
+
+                                                <i class="iconify fa6-solid--star"></i>
+
+                                                <i class="iconify fa6-solid--star"></i>
+
+                                                <i class="iconify fa6-solid--star"></i>
+
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonials Section End -->
+
+
+    <!-- Download / CTA Section Start -->
+
+    <section id="download" class="py-20">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <div>
+
+                    <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">
+
+                        Get Started
+
+                    </span>
+
+                    <h2 class="md:text-3xl text-xl font-semibold my-5">
+
+                        Make today more productive with Kora
+
+                    </h2>
+
+                    <p class="text-default-500">
+
+                        Plan your tasks, organize your priorities,
+                        and get more done with Kora.
+
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center gap-4 my-10">
+
+                        <a href="#">
+
+                            <img src="assets/images/buttons/google.png" class="w-48" alt="Download Kora on Google Play">
+
+                        </a>
+
+                        <a href="#">
+
+                            <img src="assets/images/buttons/store.png" class="w-48" alt="Download Kora on App Store">
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Footer Links -->
+
+                <div>
+
+                    <ul class="flex flex-wrap items-center justify-center gap-5">
+
+                        <li class="after:content-['-'] after:text-default-500 after:font-extrabold">
+
+                            <a href="#" class="hover:text-primary me-4">
+
+                                About Kora
+
+                            </a>
+
+                        </li>
+
+                        <li class="after:content-['-'] after:text-default-500 after:font-extrabold">
+
+                            <a href="#" class="hover:text-primary me-4">
+
+                                Privacy
+
+                            </a>
+
+                        </li>
+
+                        <li class="after:content-['-'] after:text-default-500 after:font-extrabold">
+
+                            <a href="#" class="hover:text-primary me-4">
+
+                                Terms
+
+                            </a>
+
+                        </li>
+
+                        <li class="after:content-['-'] after:text-default-500 after:font-extrabold">
+
+                            <a href="contact.html" class="hover:text-primary me-4">
+
+                                Support
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="contact.html" class="hover:text-primary">
+
+                                Contact Us
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                    <p class="my-5">
+
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+
+                        © Kora. All rights reserved.
+
+                    </p>
+
+                    <a href="index.html">
+                        <img src="assets/images/favicon.ico" class="h-8 mx-auto" alt="Kora Logo">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Download / CTA Section End -->
+
+
+    <!-- Back To Top Start -->
+
+    <button data-toggle="back-to-top"
+        class="fixed text-sm rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-primary/20 text-primary flex justify-center items-center">
+        <i class="iconify fa6-solid--arrow-up text-base"></i>
+    </button>
+
+    <!-- Back To Top End -->
+
+
+    <!-- Preline Js -->
+    <script src="assets/libs/preline/index.js"></script>
+    <!-- Swiper Plugin Js -->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <!-- Animation on Scroll Plugin Js -->
+    <script src="assets/libs/aos/aos.js"></script>
+    <!-- Theme Js -->
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
